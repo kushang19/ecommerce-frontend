@@ -1,0 +1,26 @@
+/* Home Page Styles */
+.home-container {
+    text-align: center;
+    padding: 0;
+  }
+    
+  /* Buttons */
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
