@@ -8,17 +8,19 @@ import Register from "./pages/Auth/Register";
 import ProtectedRoute from "./routes/ProtectedRoute";
 import { AuthProvider } from "./context/AuthContext";
 import Layout from "./components/Layout";
+import { CartProvider } from "./context/CartContext";
 
 function App() {
   return (
     <Router>
       <AuthProvider>
+        <CartProvider>
         <Layout>
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/" element={<Home />} />
-            <Route path="/product/:id" element={<Product />} />
+            <Route path="/product" element={<Product />} />
             <Route
               path="/cart"
               element={
@@ -37,6 +39,7 @@ function App() {
             />
           </Routes>
         </Layout>
+        </CartProvider>
       </AuthProvider>
     </Router>
   );

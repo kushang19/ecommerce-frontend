@@ -12,7 +12,7 @@ const Header = () => {
         <Link to="/" className="logo">🛒 MyShop</Link>
         <div className="nav-links">
           <Link to="/">Home</Link>
-          <Link to="/products">Products</Link>
+          <Link to="/product">Products</Link>
           {user ? (
             <>
               <Link to="/cart">Cart</Link>

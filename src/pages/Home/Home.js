@@ -13,7 +13,7 @@ const Home = () => {
         <h1>Welcome to MyShop 🛍️</h1>
         <p>Find the best products at the best prices!</p>
         <div className="buttons">
-          <Link to="/products" className="btn">Browse Products</Link>
+          <Link to="/product" className="btn">Browse Products</Link>
           {user ? <Link to="/cart" className="btn">Go to Cart</Link> : <Link to="/login" className="btn">Login to Shop</Link>}
         </div>
       </div>
